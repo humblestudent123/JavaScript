@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.zagolov {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+#zagolov1,
+#int {
+  background-color: rgb(44, 44, 44);
+  height: 60px;
+  margin: 0;
+  padding: 10px 0 10px 90px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tabs {
+  display: flex;
+  justify-content: center; /* центр по горизонтали */
+  gap: 10px;               /* расстояние между вкладками */
+}
+
+.tabs a {
+  text-decoration: none;   /* убираем подчеркивание */
+  color: black;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.tabs a:hover {
+  background-color: #eee;
+}
+
+#install, #usage, #faq {
+  padding-left: 200px;
 }
