@@ -41,18 +41,6 @@ function FirstPage() {
           </div>
         </section>
 
-  <div id='start'>
-    <a
-  id="start-button"
-  href="pages/SecondPage  "
-  onClick={(e) => {
-    e.preventDefault(); // чтобы ссылка не перезагружала страницу
-    handleStart();
-  }}
->
-  Начать
-</a>
-  </div>
 
         <section id="usage">
           <h2>Использование</h2>
@@ -63,6 +51,16 @@ function FirstPage() {
             Если без JavaScript — сайт статичный. С JavaScript — сайт «оживает».
           </p>
         </section>
+
+          <div id='start'>
+    <a id="start-button" href="pages/SecondPage" onClick={(e) => { e.preventDefault(); // чтобы ссылка не перезагружала страницу
+    handleStart();
+    }}
+  >
+    Начать
+</a>
+  </div>
+
 
         <section id="reviews">
           <h2>Отзывы наших учеников</h2>
